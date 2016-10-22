@@ -3,50 +3,107 @@ $snugug-intro: true;
 
 @import 'snugug-flowtime';
 
-[data-state]:not([data-state="end"]):not([data-state="intro"]) {
+body {
+  @extend %state-cover;
+  background-size: cover;
+  background-color: color('purple', 80);
+  background-image: url('../images/party.gif');
+}
+
+.no-break {
+  hyphens: none;
+}
+
+.new-line {
+  display: block;
+}
+
+[data-state]:not([data-state='end']):not([data-state='intro']):not([data-state='clear']) {
   color: transparent;
 }
 
-[data-state='magic'] {
-  @extend %state-cover;
-  background-size: contain;
-  background-color: color('purple', 80);
-  background-image: url('../images/magic.gif');
+[data-state='clear'],
+[data-state='fade'] {
+  background-color: white;
+  transition: background 3.5s ease-in-out;
+  transition-delay: .5s;
 }
 
-[data-state='cool'] {
-  @extend %state-cover;
-  background-image: url('../images/cool.gif');
+$text-shadow: 1px 1px black, -1px -1px black, 2px -2px black, 3px -3px black, 4px -4px black, 5px -5px black;
+
+[data-state='fade'] {
+  h2 {
+    color: transparent;
+    text-shadow: none;
+    transition: color 1s ease-in-out, text-shadow 1s ease-in-out;
+    // height: 85vh;
+    text-align: center;
+
+    &.revealed {
+      color: #d74108;
+      text-shadow: $text-shadow;
+    }
+  }
 }
 
-[data-state='secret-sauce'] {
-  @extend %state-cover;
-  background-size: contain;
-  background-color: black;
-  background-image: url('../images/secret-sauce.gif');
+.actual[data-state='fade'] {
+  background-color: transparent;
 }
 
-[data-state='rad'] {
-  @extend %state-cover;
-  background-size: contain;
-  background-color: rgb(237, 254, 253);
-  background-image: url('../images/rad.gif');
+[data-state='story'] {
+  h2 {
+    // height: 80vh;
+    text-align: center;
+    text-shadow: $text-shadow;
+  }
 }
 
+[data-state='fireplace'] {
 
-[data-state='excited'] {
-  @extend %state-cover;
-  background-size: contain;
-  background-color: black;
-  background-image: url('../images/excited.gif');
+  .ft-page--footnote {
+    background: linear-gradient(to right, rgba(black, .5) 20%, rgba(black, 0) 40%);
+    font-size: .75em;
+
+    a {
+      text-transform: none;
+      @include underline(black, #d74108);
+    }
+  }
 }
 
-[data-state='magic-out'] {
-  @extend %state-cover;
-  background-size: contain;
-  background-color: black;
-  background-image: url('../images/magic-gob.gif');
-}
+// [data-state='cool'] {
+//   @extend %state-cover;
+//   background-image: url('../images/cool.gif');
+// }
+
+// [data-state='secret-sauce'] {
+//   @extend %state-cover;
+//   background-size: contain;
+//   background-color: black;
+//   background-image: url('../images/secret-sauce.gif');
+// }
+
+// [data-state='rad'] {
+//   @extend %state-cover;
+//   background-size: contain;
+//   background-color: rgb(237, 254, 253);
+//   background-image: url('../images/rad.gif');
+// }
+
+
+// [data-state='excited'] {
+//   @extend %state-cover;
+//   background-size: contain;
+//   background-color: black;
+//   background-image: url('../images/excited.gif');
+// }
+
+// [data-state='magic-out'] {
+//   @extend %state-cover;
+//   background-size: contain;
+//   background-color: black;
+//   background-image: url('../images/magic-gob.gif');
+// }
 
 [data-state='end'] {
   a:hover {
