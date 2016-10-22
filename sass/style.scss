@@ -50,6 +50,15 @@ $text-shadow: 1px 1px black, -1px -1px black, 2px -2px black, 3px -3px black, 4p
   background-color: transparent;
 }
 
+[data-state='fade-out'] {
+  transition: background 3.5s ease-in-out;
+  transition-delay: .5s;
+
+  &.actual {
+    background-color: white;
+  }
+}
+
 [data-state='story'] {
   h2 {
     // height: 80vh;
