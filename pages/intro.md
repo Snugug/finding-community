@@ -1,4 +1,4 @@
 ---
 state: intro
 ---
-# Building a Front-End Development Community at Work
+# Lead The Change You Want To See At Work

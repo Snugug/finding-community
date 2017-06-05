@@ -1,4 +1,4 @@
 ---
 state: story
 ---
-## We Have a Unified Vision
+## A Shared New Vision
