@@ -8,12 +8,12 @@
 
 {% set attrs = url|attributes %}
 
-<div  class="ft-page" {% if attrs.title %}data-title="{{attrs.title}}"{% endif %} {% if attrs.state%}data-state="{{attrs.state}}"{% endif %}>
-  <div class="ft-page--content">
+<div  class="_stage--slide" {% if attrs.title %}data-title="{{attrs.title}}"{% endif %} {% if attrs.state%}data-state="{{attrs.state}}"{% endif %}>
+  <div class="_stage--content">
     {{ url|render|safe }}
   </div>
   {% if attrs.footnote %}
-  <div class="ft-page--footnote">
+  <div class="_stage--footnote">
     {{ attrs.footnote|markdown|safe }}
   </div>
   {% endif %}
