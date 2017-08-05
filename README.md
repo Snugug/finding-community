@@ -1,4 +1,4 @@
-# Magic Tricks with Houdini
+# Finding Community
 
 ```
                ,.-----__
