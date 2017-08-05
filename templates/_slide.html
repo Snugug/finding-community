@@ -12,6 +12,11 @@
   <div class="_stage--content">
     {{ url|render|safe }}
   </div>
+  {% if attrs.notes %}
+  <aside class="_stage--notes">
+    {{ attrs.notes|markdown|safe }}
+  </aside>
+  {% endif %}
   {% if attrs.footnote %}
   <div class="_stage--footnote">
     {{ attrs.footnote|markdown|safe }}
