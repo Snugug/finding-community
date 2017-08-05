@@ -84,13 +84,20 @@ $accent: (
 //////////////////////////////
 // State
 //////////////////////////////
-[data-state='intro'] {
+[data-state='intro'],
+[data-state='end'] {
   @extend %fed--mark;
   background-color: $fed-color;
   // font-size: 2em;
 
   h1 {
     font-weight: 400;
+  }
+}
+
+[data-state='end'] {
+  a {
+    color: $black;
   }
 }
 
