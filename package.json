@@ -5,8 +5,7 @@
     "bower": "bower",
     "gulp": "gulp",
     "start": "gulp",
-    "test": "gulp build",
-    "posttest": "gulp dist"
+    "test": "gulp deploy:dry"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
