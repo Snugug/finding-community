@@ -18,6 +18,7 @@ coverage
 .www/
 .tmp/
 .DS_Store
+.publish
 
 # node-waf configuration
 .lock-wscript
