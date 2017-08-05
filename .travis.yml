@@ -16,7 +16,7 @@ branches:
 deploy:
   skip_cleanup: true
   provider: script
-  script: npm run publish
+  script: npm run gulp publish
   on:
     branch: master
 
