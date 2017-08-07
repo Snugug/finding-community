@@ -1,4 +1,4 @@
 ---
 state: clear
 ---
-### Our Story Starts in the Fall of 2014
+## Our Story Starts in the Fall of 2014
