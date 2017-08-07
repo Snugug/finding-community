@@ -11,6 +11,14 @@ pages:
       - vision.md
       - actions.md
       - anchored.md
+  - folder: hackademy
+    slides:
+      - title.html
+      - overview.html
+      - evolution.html
+      - talks.html
+      - hackathon.html
+      - all.html
   - slides:
       - quote.html
   - folder: feducation
@@ -30,13 +38,13 @@ pages:
 {% from '_slide.html' import slide %}
 
 {%block content %}
-<article class="_stage">
+<main class="_stage">
   {% for section in pages %}
-    <section class="_stage--group" {% if section.title %}data-title="{{section.title}}"{% endif %}>
+    <article class="_stage--group" {% if section.title %}data-title="{{section.title}}"{% endif %}>
       {% for page in section.slides %}
         {{ slide(page, section) }}
       {% endfor %}
-    </section>
+    </article>
   {% endfor %}
 </article>
 {% endblock %}

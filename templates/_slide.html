@@ -8,7 +8,7 @@
 
 {% set attrs = url|attributes %}
 
-<div  class="_stage--slide" {% if attrs.title %}data-title="{{attrs.title}}"{% endif %} {% if attrs.state%}data-state="{{attrs.state}}"{% endif %}>
+<section  class="_stage--slide" {% if attrs.title %}data-title="{{attrs.title}}"{% endif %} {% if attrs.state%}data-state="{{attrs.state}}"{% endif %}>
   <div class="_stage--content">
     {{ url|render|safe }}
   </div>
@@ -18,10 +18,10 @@
   </aside>
   {% endif %}
   {% if attrs.footnote %}
-  <div class="_stage--footnote">
+  <footer class="_stage--footnote">
     {{ attrs.footnote|markdown|safe }}
-  </div>
+  </footer>
   {% endif %}
-</div>
+</section>
 
 {% endmacro %}

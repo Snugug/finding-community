@@ -17,6 +17,41 @@ $accent: (
 }
 
 //////////////////////////////
+// Override Styling
+//////////////////////////////
+h3 {
+  font-size: 1em;
+  margin-top: 2.25rem;
+}
+
+ul {
+  margin-top: 2.25rem;
+}
+
+li {
+  line-height: 2.25rem;
+}
+
+a {
+  background-position: 0 1.175em;
+
+  &:hover {
+    background-position: 0 1.175em;
+  }
+}
+
+p {
+  line-height: 2.25rem;
+  margin-top: 2.25rem;
+}
+
+cite {
+  display: block;
+  font-weight: 600;
+  margin-top: 2.25rem;
+}
+
+//////////////////////////////
 // Background
 //////////////////////////////
 .stage-fright {
@@ -73,6 +108,12 @@ $accent: (
     text-align: left;
     text-shadow: 0 0 transparent;
   }
+
+  h2 {
+    @include close-shade(#496213, #496213, 'bottom right', 15);
+    color: $white;
+    font-size: 2.75em;
+  }
 }
 
 [data-state='end'] {
@@ -88,34 +129,49 @@ $accent: (
 //////////////////////////////
 // General Override
 //////////////////////////////
-h3 {
-  font-size: 1em;
-  margin-top: 2.25rem;
-}
+[data-state='hackademy'] {
+  background-image: url('../images/fed.svg'), url('../images/hackademy.jpg');
+  background-position: bottom .5em right .5em, center;
+  background-repeat: no-repeat;
+  background-size: 30vw, cover;
 
-ul {
-  margin-top: 2.25rem;
-}
+  blockquote {
+    $padding: 1.5rem;
+    $blockquote-background: rgba($white, .9);
 
-li {
-  line-height: 2.25rem;
-}
+    background: $blockquote-background;
+    border-radius: 1rem;
+    padding: $padding;
 
-a {
-  background-position: 0 1.175em;
-
-  &:hover {
-    background-position: 0 1.175em;
+    &::before {
+      height: calc(100% - #{$padding * 2});
+      left: $padding / 2;
+      top: $padding;
+    }
   }
 }
 
-p {
-  line-height: 2.25rem;
-  margin-top: 2.25rem;
+//////////////////////////////
+// Custom Styling
+//////////////////////////////
+.slide-notes--content {
+  * {
+    break-inside: unset;
+  }
 }
 
-cite {
-  display: block;
-  font-weight: 600;
-  margin-top: 2.25rem;
+
+.split-list {
+  columns: 2;
+  list-style: none;
+  margin-left: 0;
+  margin-top: .75rem;
+
+  li {
+    break-inside: avoid;
+
+    + li {
+      margin-top: .75rem;
+    }
+  }
 }
