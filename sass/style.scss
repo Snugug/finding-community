@@ -51,10 +51,36 @@ $accent: (
   h1 {
     font-weight: 400;
   }
+
+  h2 {
+    @include close-shade(#496213, #496213, 'bottom right', 15);
+    color: $white;
+    font-size: 2.75em;
+  }
 }
 
 [data-state='end'] {
   a {
     color: $black;
+  }
+}
+
+.slide-notes--content * {
+  break-inside: unset;
+}
+
+
+.split-list {
+  columns: 2;
+  list-style: none;
+  margin-left: 0;
+  margin-top: .75rem;
+
+  li {
+    break-inside: avoid;
+
+    + li {
+      margin-top: .75rem;
+    }
   }
 }
