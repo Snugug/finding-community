@@ -65,8 +65,35 @@ $accent: (
   }
 }
 
-.slide-notes--content * {
-  break-inside: unset;
+[data-state='hackademy'] {
+  background-image: url('../images/fed.svg'), url('../images/hackademy.jpg');
+  background-position: bottom .5em right .5em, center;
+  background-repeat: no-repeat;
+  background-size: 30vw, cover;
+
+  blockquote {
+    $padding: 1.5rem;
+    $blockquote-background: rgba($white, .9);
+
+    background: $blockquote-background;
+    border-radius: 1rem;
+    padding: $padding;
+
+    &::before {
+      height: calc(100% - #{$padding * 2});
+      left: $padding / 2;
+      top: $padding;
+    }
+  }
+}
+
+//////////////////////////////
+// Custom Styling
+//////////////////////////////
+.slide-notes--content {
+  * {
+    break-inside: unset;
+  }
 }
 
 
