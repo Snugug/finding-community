@@ -1,4 +1,0 @@
----
-state: fade-out
----
-End
