@@ -17,41 +17,6 @@ $accent: (
 }
 
 //////////////////////////////
-// Override Styling
-//////////////////////////////
-h3 {
-  font-size: 1em;
-  margin-top: 2.25rem;
-}
-
-ul {
-  margin-top: 2.25rem;
-}
-
-li {
-  line-height: 2.25rem;
-}
-
-a {
-  background-position: 0 1.175em;
-
-  &:hover {
-    background-position: 0 1.175em;
-  }
-}
-
-p {
-  line-height: 2.25rem;
-  margin-top: 2.25rem;
-}
-
-cite {
-  display: block;
-  font-weight: 600;
-  margin-top: 2.25rem;
-}
-
-//////////////////////////////
 // Background
 //////////////////////////////
 .stage-fright {
@@ -77,6 +42,17 @@ cite {
 //////////////////////////////
 // State
 //////////////////////////////
+[data-state='section'] {
+  @extend %fed--mark;
+  background-color: $fed-color;
+
+  h2 {
+    @include close-shade(#496213, #496213, 'bottom right', 15);
+    color: $white;
+    font-size: 2.75em;
+  }
+}
+
 [data-state='intro'],
 [data-state='end'] {
   @extend %fed--mark;
@@ -107,12 +83,6 @@ cite {
     line-height: 1.5em;
     text-align: left;
     text-shadow: 0 0 transparent;
-  }
-
-  h2 {
-    @include close-shade(#496213, #496213, 'bottom right', 15);
-    color: $white;
-    font-size: 2.75em;
   }
 }
 
@@ -157,6 +127,40 @@ cite {
 .slide-notes--content {
   * {
     break-inside: unset;
+  }
+}
+
+._stage--content {
+  h3 {
+    font-size: 1em;
+    margin-top: 2.25rem;
+  }
+
+  ul {
+    margin-top: 2.25rem;
+  }
+
+  li {
+    line-height: 2.25rem;
+  }
+
+  a {
+    background-position: 0 1.175em;
+
+    &:hover {
+      background-position: 0 1.175em;
+    }
+  }
+
+  p {
+    line-height: 2.25rem;
+    margin-top: 2.25rem;
+  }
+
+  cite {
+    display: block;
+    font-weight: 600;
+    margin-top: 2.25rem;
   }
 }
 
