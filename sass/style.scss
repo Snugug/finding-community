@@ -11,16 +11,51 @@ $accent: (
 
 %fed--mark {
   background-image: url('../images/fed.svg');
-  background-position: bottom .5em right .5em;
+  background-position: bottom .5em left .5em;
   background-repeat: no-repeat;
   background-size: 30vw;
+}
+
+//////////////////////////////
+// Override Styling
+//////////////////////////////
+h3 {
+  font-size: 1em;
+  margin-top: 2.25rem;
+}
+
+ul {
+  margin-top: 2.25rem;
+}
+
+li {
+  line-height: 2.25rem;
+}
+
+a {
+  background-position: 0 1.175em;
+
+  &:hover {
+    background-position: 0 1.175em;
+  }
+}
+
+p {
+  line-height: 2.25rem;
+  margin-top: 2.25rem;
+}
+
+cite {
+  display: block;
+  font-weight: 600;
+  margin-top: 2.25rem;
 }
 
 //////////////////////////////
 // Background
 //////////////////////////////
 .stage-fright {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   // font-size: 1.5em;
   // font-weight: 400;
 
@@ -46,10 +81,32 @@ $accent: (
 [data-state='end'] {
   @extend %fed--mark;
   background-color: $fed-color;
-  // font-size: 2em;
+  background-position: 25% 50%;
+  justify-content: flex-end;
+
+  ._stage--content {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    max-width: 100%;
+    padding: 3rem;
+    width: 50%;
+  }
+
+  .half-n-half--title-style {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
 
   h1 {
-    font-weight: 400;
+    color: $black;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align: left;
+    text-shadow: 0 0 transparent;
   }
 
   h2 {
@@ -60,11 +117,18 @@ $accent: (
 }
 
 [data-state='end'] {
-  a {
-    color: $black;
+  ._stage--content {
+    align-content: center;
+  }
+
+  .thumbs-up {
+    margin: 1rem 1rem 0 0;
   }
 }
 
+//////////////////////////////
+// General Override
+//////////////////////////////
 [data-state='hackademy'] {
   background-image: url('../images/fed.svg'), url('../images/hackademy.jpg');
   background-position: bottom .5em right .5em, center;
