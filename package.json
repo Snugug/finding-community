@@ -11,6 +11,6 @@
     "gulp": "^3.9.1",
     "gulp-armadillo": "^4.2.1",
     "prismjs": "^1.6.0",
-    "stage-fright": "^0.6.0"
+    "stage-fright": "^0.6.2"
   }
 }
