@@ -1,7 +1,7 @@
 ---
 state: feducation-goingglobal
 notes: >
-  * ... tacos and coffee!
+  * …tacos and coffee!
 
   * Being able to cater in lunch was instrumental to FEDucation's success.  We were able to chat about code over food and everybody appreciated it.  It was an extra enticement to get people to come!
 
