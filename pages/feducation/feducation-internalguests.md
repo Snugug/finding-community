@@ -3,7 +3,7 @@ state: feducation-guests
 notes: >
   * Because FEDucaiton is community driven, most of our speakers come from not only our global FED community, but our global IBM Community.
 
-  * Some talks of note include...
+  * Some talks of note include…
 ---
 ## Speakers from our IBM Community -
   
