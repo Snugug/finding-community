@@ -131,13 +131,12 @@ $accent: (
 }
 
 ._stage--content {
-  h3 {
-    font-size: 1em;
+  *:not(li) + *:not(li) {
     margin-top: 2.25rem;
   }
 
-  ul {
-    margin-top: 2.25rem;
+  h3 {
+    font-size: 1em;
   }
 
   li {
@@ -154,13 +153,11 @@ $accent: (
 
   p {
     line-height: 2.25rem;
-    margin-top: 2.25rem;
   }
 
   cite {
     display: block;
     font-weight: 600;
-    margin-top: 2.25rem;
   }
 }
 
