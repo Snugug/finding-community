@@ -7,6 +7,7 @@ $accent: (
   dark: mix($black, $fed-color, 50%),
 );
 
+@import 'toolkit';
 @import 'stage-fright';
 
 %fed--mark {
@@ -187,6 +188,106 @@ $accent: (
 
     + li {
       margin-top: .75rem;
+    }
+  }
+}
+
+%model--item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.model {
+  $ux: rgb(101, 149, 224);
+  $be: rgb(232, 195, 65);
+
+  display: grid;
+  font-size: .75em;
+  grid-gap: .25rem; // sass-lint:disable-line no-misspelled-properties
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 2fr 1fr .5fr .5fr;
+  text-align: center;
+
+  *:not(li) + *:not(li) { // sass-lint:disable-line force-pseudo-nesting
+    margin-top: 0;
+  }
+
+  p {
+    line-height: 1.25;
+    padding: 1rem .5rem;
+  }
+
+  &--ux {
+    @extend %model--item;
+    background-color: $ux;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+
+  &--back-end {
+    @extend %model--item;
+    background-color: $be;
+    grid-column: 6 / span 1;
+    grid-row: 1 / span 2;
+  }
+
+  &--markup {
+    @extend %model--item;
+    background: $fed-color;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  &--jsf {
+    @extend %model--item;
+    background: $fed-color;
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  &--vjs {
+    @extend %model--item;
+    background: $fed-color;
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  &--njs {
+    @extend %model--item;
+    background: $fed-color;
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  &--nm {
+    @extend %model--item;
+    background: $fed-color;
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 1;
+  }
+
+  &--spectrum {
+    @extend %model--item;
+    border-top: 1px solid $black;
+    grid-column: 2 / span 4;
+    grid-row: 4 / span 1;
+    position: relative;
+
+    &::before {
+      @include triangle($angle: 270deg);
+      content: '';
+      left: 0;
+      position: absolute;
+      transform: translateY(-1.75rem);
+    }
+
+    &::after {
+      @include triangle($angle: 90deg);
+      content: '';
+      position: absolute;
+      right: 0;
+      transform: translateY(-1.75rem);
     }
   }
 }
