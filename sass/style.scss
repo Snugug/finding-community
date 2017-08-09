@@ -46,12 +46,12 @@ $accent: (
   @extend %fed--mark;
   background-color: $fed-color;
 
-  ._stage--content h2 {
-    font-size: 4em;
-    font-weight: 300;
-    text-shadow: 0 0 transparent;
-    //@include close-shade(#496213, #496213, 'bottom right', 15);
-    //color: $white;
+  ._stage--content {
+    h2 {
+      font-size: 4em;
+      font-weight: 300;
+      text-shadow: 0 0 transparent;
+    }
   }
 }
 
@@ -134,17 +134,13 @@ $accent: (
 
 ._stage--content {
 
-  *:not(li) + *:not(li) {
+  *:not(li) + *:not(li) { // sass-lint:disable-line force-pseudo-nesting
     margin-top: 2.25rem;
   }
 
   h2 {
     font-size: 2em;
     line-height: 1.25em;
-  }
-
-  h3 {
-    font-size: 1em;
   }
 
   h3 {
@@ -167,8 +163,10 @@ $accent: (
     line-height: 2.25rem;
   }
 
-  blockquote p {
-    line-height: 1.5em;
+  blockquote {
+    p {
+      line-height: 1.5em;
+    }
   }
 
   cite {
