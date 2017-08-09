@@ -46,10 +46,12 @@ $accent: (
   @extend %fed--mark;
   background-color: $fed-color;
 
-  h2 {
-    @include close-shade(#496213, #496213, 'bottom right', 15);
-    color: $white;
-    font-size: 2.75em;
+  ._stage--content h2 {
+    font-size: 4em;
+    font-weight: 300;
+    text-shadow: 0 0 transparent;
+    //@include close-shade(#496213, #496213, 'bottom right', 15);
+    //color: $white;
   }
 }
 
@@ -131,6 +133,11 @@ $accent: (
 }
 
 ._stage--content {
+  h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+
   h3 {
     font-size: 1em;
     margin-top: 2.25rem;
@@ -155,6 +162,10 @@ $accent: (
   p {
     line-height: 2.25rem;
     margin-top: 2.25rem;
+  }
+
+  blockquote p {
+    line-height: 1.5em;
   }
 
   cite {
