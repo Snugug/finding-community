@@ -7,6 +7,6 @@ notes: >
 
   * Once Damon Deaner came on board, he was able to help operationalize the program using his 10+ years of IBM Experience to navigate the internal workings of the company - how to create mailing lists, use internal scheduling tools.
 
-  * As we started to scale, we found that learning best took place with...
+  * As we started to scale, we found that learning best took place with…
 ---
 ## FEDucation is a community driven program.
