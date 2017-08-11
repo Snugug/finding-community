@@ -298,6 +298,13 @@ $accent: (
   }
 }
 
+[data-state='damon'] {
+  background-image: url('../images/damon.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 //////////////////////////////
 // Custom Styling
 //////////////////////////////
@@ -377,6 +384,10 @@ $accent: (
     + li {
       margin-top: .75rem;
     }
+  }
+
+  img {
+    margin-top: 0 !important;
   }
 }
 
@@ -504,4 +515,8 @@ $accent: (
     line-height: 1em;
     margin-top: 0 !important; // sass-lint:disable-line no-important
   }
+}
+
+.invisible {
+  color: transparent;
 }
