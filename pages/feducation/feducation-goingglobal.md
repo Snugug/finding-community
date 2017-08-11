@@ -12,5 +12,4 @@ notes: >
   * But now that we have moved our sessions to a more accessible time, we have have doubled our listening audience.  People call in from Dublin, Boebligen and Hursely to name a few.
 
 ---
-<h2>Going global with<br >🌮 and ☕️</h2>
-<img src="images/feducation.jpg" alt="FEDucation with Una Kravetz" class="tacos-and-coffee" />
+## Going global with 🌮 and ☕️
