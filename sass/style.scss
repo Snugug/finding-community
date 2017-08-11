@@ -9,6 +9,13 @@ $accent: (
 
 @import 'toolkit';
 @import 'stage-fright';
+@import 'ibm-colors';
+
+@mixin hackademy-header($accent) {
+  background-color: color($accent, 50);
+  @include checkerboard(color($accent, 80), color($accent, 50), $steps: 5);
+  @include close-shade($black, #111, 'bottom right', 15);
+}
 
 %fed--mark {
   background-image: url('../images/fed.svg');
@@ -97,6 +104,86 @@ $accent: (
   .thumbs-up {
     margin: 1rem 1rem 0 0;
   }
+
+  ul {
+    flex-basis: 100%;
+  }
+}
+
+[data-state='hackademy-talks'] {
+  ul {
+    grid-gap: 0;
+  }
+
+  li {
+    padding: .75rem;
+    color: $white;
+
+    &:nth-of-type(odd) {
+      text-align: right;
+    }
+
+    &:nth-of-type(1) {
+      @include hackademy-header('violet');
+    }
+
+    &:nth-of-type(2) {
+      @include hackademy-header('teal');
+    }
+
+    &:nth-of-type(3) {
+      @include hackademy-header('lime');
+    }
+
+    &:nth-of-type(4) {
+      @include checkerboard(color('cool-grey', 30), color('cool-grey', 10), $steps: 5);
+      @include close-shade($black, #111, 'bottom right', 15);
+    }
+
+    &:nth-of-type(5) {
+      @include hackademy-header('peach');
+    }
+
+    &:nth-of-type(6) {
+      @include hackademy-header('magenta');
+    }
+
+    &:nth-of-type(7) {
+      @include hackademy-header('blue');
+    }
+
+    &:nth-of-type(8) {
+      @include hackademy-header('red');
+    }
+
+    &:nth-of-type(9) {
+      @include hackademy-header('gold');
+    }
+  }
+}
+
+[data-state='hackademy-workshops'] {
+  ul {
+    grid-gap: 0;
+  }
+
+  li {
+    padding: .75rem;
+    color: $white;
+
+    &:nth-of-type(odd) {
+      text-align: right;
+    }
+
+    &:nth-of-type(1) {
+      @include hackademy-header('magenta');
+    }
+
+    &:nth-of-type(2) {
+      @include checkerboard(color('cool-grey', 30), color('cool-grey', 10), $steps: 5);
+      @include close-shade($black, #111, 'bottom right', 15);
+    }
+  }
 }
 
 //////////////////////////////
@@ -176,6 +263,20 @@ $accent: (
   }
 }
 
+
+.grid-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .75rem;
+  list-style: none;
+  margin-left: 0;
+  margin-top: .75rem;
+
+  li {
+    grid-column: span 1;
+    margin-top: 0;
+  }
+}
 
 .split-list {
   columns: 2;
