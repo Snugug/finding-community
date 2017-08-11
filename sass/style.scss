@@ -12,9 +12,9 @@ $accent: (
 @import 'ibm-colors';
 
 @mixin hackademy-header($accent) {
-  background-color: color($accent, 50);
   @include checkerboard(color($accent, 80), color($accent, 50), $steps: 5);
   @include close-shade($black, #111, 'bottom right', 15);
+  background-color: color($accent, 50);
 }
 
 %fed--mark {
@@ -112,12 +112,12 @@ $accent: (
 
 [data-state='hackademy-talks'] {
   ul {
-    grid-gap: 0;
+    grid-gap: 0; // sass-lint:disable-line no-misspelled-properties
   }
 
   li {
-    padding: .75rem;
     color: $white;
+    padding: .75rem;
 
     &:nth-of-type(odd) {
       text-align: right;
@@ -138,6 +138,7 @@ $accent: (
     &:nth-of-type(4) {
       @include checkerboard(color('cool-grey', 30), color('cool-grey', 10), $steps: 5);
       @include close-shade($black, #111, 'bottom right', 15);
+      background-color: color('cool-grey', 30);
     }
 
     &:nth-of-type(5) {
@@ -164,12 +165,12 @@ $accent: (
 
 [data-state='hackademy-workshops'] {
   ul {
-    grid-gap: 0;
+    grid-gap: 0; // sass-lint:disable-line no-misspelled-properties
   }
 
   li {
-    padding: .75rem;
     color: $white;
+    padding: .75rem;
 
     &:nth-of-type(odd) {
       text-align: right;
@@ -182,6 +183,7 @@ $accent: (
     &:nth-of-type(2) {
       @include checkerboard(color('cool-grey', 30), color('cool-grey', 10), $steps: 5);
       @include close-shade($black, #111, 'bottom right', 15);
+      background-color: color('cool-grey', 30);
     }
   }
 }
@@ -267,6 +269,7 @@ $accent: (
   }
 }
 
+
 //////////////////////////////
 // General Override
 //////////////////////////////
@@ -347,8 +350,8 @@ $accent: (
 
 .grid-list {
   display: grid;
+  grid-gap: .75rem; // sass-lint:disable-line no-misspelled-properties
   grid-template-columns: 1fr 1fr;
-  grid-gap: .75rem;
   list-style: none;
   margin-left: 0;
   margin-top: .75rem;
@@ -471,5 +474,31 @@ $accent: (
       right: 0;
       transform: translateY(-1.75rem);
     }
+  }
+}
+
+
+.us {
+  display: grid;
+  grid-gap: 1rem;  // sass-lint:disable-line no-misspelled-properties
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  text-align: center;
+
+  &--image {
+    border: .3rem $fed-color double;
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  &--name,
+  &--desc {
+    display: block;
+  }
+
+  &--desc {
+    font-size: .8em;
+    line-height: 1em;
+    margin-top: 0 !important; // sass-lint:disable-line no-important
   }
 }
