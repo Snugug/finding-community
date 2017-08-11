@@ -394,3 +394,29 @@ $accent: (
     }
   }
 }
+
+
+.us {
+  display: grid;
+  grid-gap: 1rem;  // sass-lint:disable-line no-misspelled-properties
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  text-align: center;
+
+  &--image {
+    border: .3rem $fed-color double;
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  &--name,
+  &--desc {
+    display: block;
+  }
+
+  &--desc {
+    font-size: .8em;
+    line-height: 1em;
+    margin-top: 0 !important; // sass-lint:disable-line no-important
+  }
+}
