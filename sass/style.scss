@@ -190,6 +190,10 @@ $accent: (
     display: flex;
     justify-content: space-between;
   }
+
+  img {
+    margin-top: 0 !important;
+  }
 }
 
 [data-state='feducation-internalguests'] {
