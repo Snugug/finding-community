@@ -8,4 +8,4 @@ notes: >
     * Interestingly, all of the early leaders had more or less the same vision without needing to discuss it
       * Values around craft were shaped by similar principles, especially Social Coding and Open Source
 ---
-## A Shared New Vision
+## 👁 A Shared New Vision

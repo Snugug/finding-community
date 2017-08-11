@@ -13,4 +13,4 @@ notes: >
   
   * In April of 2015, Damon Deaner, a proven leader from within IBM, was brought in by Phil as a member of the IBM Design Leadership specifically to guide the global FED@IBM community, something that was unique amongst similar disciplines in IBM
 ---
-## Innovators and Community
+## 👫 Innovators and Community

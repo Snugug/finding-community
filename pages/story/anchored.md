@@ -7,4 +7,4 @@ notes: >
   
   * This close connection sets up our community to be innovators and early adopters within their business units, turning them in to leaders of our new culture
 ---
-## Anchor Change
+## ⚓️ Anchor Change

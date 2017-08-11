@@ -15,4 +15,4 @@ notes: >
     
     * Some of the projects done during Hackademy have gone on to become widely-used at IBM and have even helped win client work
 ---
-## Innovation and Action
+## 🤖 Innovation and Action
