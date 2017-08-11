@@ -230,7 +230,7 @@ $accent: (
 }
 
 [data-state='feducation-internalguests'] {
-  background-color: #63a9dc;
+  background-color: color('cerulean', 30);
   background-image: url('../images/bee.svg');
   background-position: top .5em right .5em;
   background-repeat: no-repeat;
@@ -242,7 +242,7 @@ $accent: (
 }
 
 [data-state='feducation-guests'] {
-  background-color: #bf93eb;
+  background-color: color('violet', 30);
 
   h2 {
     text-shadow: 0 0 transparent;
@@ -263,7 +263,7 @@ $accent: (
 
 [data-state='feducation-history'] {
   .color {
-    color: #047cc0;
+    color: color('cerulean', 50);
   }
 }
 
