@@ -9,4 +9,4 @@ notes: >
 
   * As we started to scale, we found that learning best took place with…
 ---
-## FEDucation is a community driven program.
+<h2>FEDucation is a <span class="highlight-text">community driven program.</span></h2>

@@ -188,6 +188,90 @@ $accent: (
   }
 }
 
+[data-state='feducation-goingglobal'] {
+  ._stage--content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+[data-state='feducation-internalguests'] {
+  background-color: color('cerulean', 30);
+  background-image: url('../images/bee.svg');
+  background-position: top .5em right .5em;
+  background-repeat: no-repeat;
+  background-size: 25vw;
+
+  h2 {
+    text-shadow: 0 0 transparent;
+  }
+}
+
+[data-state='feducation-guests'] {
+  background-color: color('violet', 30);
+
+  h2 {
+    text-shadow: 0 0 transparent;
+  }
+}
+
+[data-state='feducation-stats'] {
+  ._stage--content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.tacos-and-coffee {
+  align-self: center;
+  display: block;
+  margin-top: 0;
+  max-width: 50%;
+}
+
+// HEX Values needed for this because these are not part of the IBM color palette
+
+.pink {
+  color: #fe80c0;
+}
+
+.red {
+  color: #fe0000;
+}
+
+.orange {
+  color: #ff8021;
+}
+
+.yellow {
+  color: #ffdf00;
+}
+
+.green {
+  color: #00a000;
+}
+
+.aqua {
+  color: #00c1b0;
+}
+
+.blue {
+  color: #0140c1;
+}
+
+.violet {
+  color: #801fa0;
+}
+
+.img-stats {
+  margin-left: 1rem;
+  width: 35%;
+}
+
+.highlight-text {
+  color: color('cerulean', 50);
+}
+
 //////////////////////////////
 // General Override
 //////////////////////////////
