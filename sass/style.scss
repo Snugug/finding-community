@@ -191,42 +191,6 @@ $accent: (
     display: flex;
     justify-content: space-between;
   }
-
-  .tacos-and-coffee {
-    align-self: center;
-    display: block;
-    margin-top: 0;
-    max-width: 50%;
-  }
-}
-
-[data-state='feducation-funfacts'] {
-  .fun-facts {
-    .pink {
-      color: #fe80c0;
-    }
-    .red {
-      color: #fe0000;
-    }
-    .orange {
-      color: #ff8021;
-    }
-    .yellow {
-      color: #ffdf00;
-    }
-    .green {
-      color: #00a000;
-    }
-    .aqua {
-      color: #00c1b0;
-    }
-    .blue {
-      color: #0140c1;
-    }
-    .violet {
-      color: #801fa0;
-    }
-  }
 }
 
 [data-state='feducation-internalguests'] {
@@ -254,18 +218,58 @@ $accent: (
     display: flex;
     justify-content: space-between;
   }
-
-  .img-stats {
-    margin-left: 1rem;
-    width: 35%;
-  }
 }
 
-[data-state='feducation-history'] {
-  .color {
-    color: color('cerulean', 50);
-  }
+.tacos-and-coffee {
+  align-self: center;
+  display: block;
+  margin-top: 0;
+  max-width: 50%;
 }
+
+// HEX Values needed for this because these are not part of the IBM color palette
+
+.pink {
+  color: #fe80c0;
+}
+
+.red {
+  color: #fe0000;
+}
+
+.orange {
+  color: #ff8021;
+}
+
+.yellow {
+  color: #ffdf00;
+}
+
+.green {
+  color: #00a000;
+}
+
+.aqua {
+  color: #00c1b0;
+}
+
+.blue {
+  color: #0140c1;
+}
+
+.violet {
+  color: #801fa0;
+}
+
+.img-stats {
+  margin-left: 1rem;
+  width: 35%;
+}
+
+.highlight-text {
+  color: color('cerulean', 50);
+}
+
 
 //////////////////////////////
 // General Override
