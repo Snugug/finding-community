@@ -14,7 +14,6 @@ $accent: (
 @mixin hackademy-header($accent) {
   @include checkerboard(color($accent, 80), color($accent, 50), $steps: 5);
   @include close-shade($black, #111, 'bottom right', 15);
-  background-color: color($accent, 50);
 }
 
 %fed--mark {
@@ -138,7 +137,6 @@ $accent: (
     &:nth-of-type(4) {
       @include checkerboard(color('cool-grey', 30), color('cool-grey', 10), $steps: 5);
       @include close-shade($black, #111, 'bottom right', 15);
-      background-color: color('cool-grey', 30);
     }
 
     &:nth-of-type(5) {
@@ -183,7 +181,6 @@ $accent: (
     &:nth-of-type(2) {
       @include checkerboard(color('cool-grey', 30), color('cool-grey', 10), $steps: 5);
       @include close-shade($black, #111, 'bottom right', 15);
-      background-color: color('cool-grey', 30);
     }
   }
 }
